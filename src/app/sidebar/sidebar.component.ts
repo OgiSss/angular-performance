@@ -16,6 +16,8 @@ export class SidebarComponent {
         { path: '/default-push', name: 'Default vs push' },
         { path: '/default-push-two', name: 'Default vs push II ' },
         { path: '/mark-for-check', name: 'Mark for check' },
+        { path: '/mark-vs-detect', name: 'Mark for check vs detect changes' },
+        { path: '/outside-angular', name: 'Run outside Angular' },
       ],
     },
     { title: 'Example', links: [] },

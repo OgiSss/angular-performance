@@ -1,0 +1,19 @@
+<div class="container">
+    <div>
+        <h3>Child - markForCheck - ASYNC</h3>
+        <img src="/assets/mark-mark.png" />
+    </div>
+    <div>
+        <h3>Child - detect changes - SYNC</h3>
+        <img src="/assets/mark-detect.png" />
+    </div>
+</div>
+
+<div class="counter">
+    Counter: {{counter}}
+</div>
+
+<div class="parents">
+    <app-mark-vs-detect-parent [isMark]="true"></app-mark-vs-detect-parent>
+    <app-mark-vs-detect-parent [isMark]="false"></app-mark-vs-detect-parent>
+</div>

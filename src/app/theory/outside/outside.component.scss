@@ -1,0 +1,26 @@
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width: 40px;
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+
+  img {
+    width: 400px;
+  }
+}
+
+.loader {
+  width: 80px;
+  display: block;
+  margin: auto;
+}

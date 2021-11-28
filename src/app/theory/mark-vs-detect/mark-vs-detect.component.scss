@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+
+  h3 {
+    text-align: center;
+    color: #000;
+  }
+
+  img {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+}
+
+.parents {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.counter {
+  color: #000;
+  text-align: center;
+  padding: 16px 32px;
+}

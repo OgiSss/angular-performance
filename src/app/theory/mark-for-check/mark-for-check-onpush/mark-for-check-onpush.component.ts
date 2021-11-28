@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
+  OnDestroy,
   OnInit,
 } from '@angular/core';
 import { Subscription } from 'rxjs';
@@ -13,7 +14,7 @@ import { CounterService } from '../counter.service';
   styleUrls: ['./mark-for-check-onpush.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MarkForCheckOnpushComponent implements OnInit {
+export class MarkForCheckOnpushComponent implements OnInit, OnDestroy {
   private subs = new Subscription();
   count: number = 0;
 

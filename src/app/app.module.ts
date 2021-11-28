@@ -23,6 +23,11 @@ import { DefaultOnpushTwoComponent } from './theory/default-onpush-two/default-o
 import { MarkForCheckComponent } from './theory/mark-for-check/mark-for-check.component';
 import { MarkForCheckDefaultComponent } from './theory/mark-for-check/mark-for-check-default/mark-for-check-default.component';
 import { MarkForCheckOnpushComponent } from './theory/mark-for-check/mark-for-check-onpush/mark-for-check-onpush.component';
+import { MarkVsDetectComponent } from './theory/mark-vs-detect/mark-vs-detect.component';
+import { MarkVsDetectDetectComponent } from './theory/mark-vs-detect/mark-vs-detect-detect/mark-vs-detect-detect.component';
+import { MarkVsDetectMarkComponent } from './theory/mark-vs-detect/mark-vs-detect-mark/mark-vs-detect-mark.component';
+import { MarkVsDetectParentComponent } from './theory/mark-vs-detect/mark-vs-detect-parent/mark-vs-detect-parent.component';
+import { OutsideComponent } from './theory/outside/outside.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +47,11 @@ import { MarkForCheckOnpushComponent } from './theory/mark-for-check/mark-for-ch
     MarkForCheckComponent,
     MarkForCheckDefaultComponent,
     MarkForCheckOnpushComponent,
+    MarkVsDetectComponent,
+    MarkVsDetectDetectComponent,
+    MarkVsDetectMarkComponent,
+    MarkVsDetectParentComponent,
+    OutsideComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,8 @@ import { DefaultOnpushTwoComponent } from './theory/default-onpush-two/default-o
 import { TheoryDefaultComponent } from './theory/default/theory-default.component';
 import { DetachReattachComponent } from './theory/detach-reattach/detach-reattach.component';
 import { MarkForCheckComponent } from './theory/mark-for-check/mark-for-check.component';
+import { MarkVsDetectComponent } from './theory/mark-vs-detect/mark-vs-detect.component';
+import { OutsideComponent } from './theory/outside/outside.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,14 @@ const routes: Routes = [
   {
     component: MarkForCheckComponent,
     path: 'mark-for-check',
+  },
+  {
+    component: MarkVsDetectComponent,
+    path: 'mark-vs-detect',
+  },
+  {
+    component: OutsideComponent,
+    path: 'outside-angular',
   },
 ];
 

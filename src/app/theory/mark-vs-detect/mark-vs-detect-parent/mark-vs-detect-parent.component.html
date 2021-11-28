@@ -1,0 +1,14 @@
+<div class="container">
+    <h3>Parent - OnPush</h3>
+    <p>Counter: {{counter}}</p>
+
+
+    <div>
+        <ng-container *ngIf="isMark;else mark">
+            <app-mark-vs-detect-mark></app-mark-vs-detect-mark>
+        </ng-container>
+        <ng-template #mark>
+            <app-mark-vs-detect-detect></app-mark-vs-detect-detect>
+        </ng-template>
+    </div>
+</div>
