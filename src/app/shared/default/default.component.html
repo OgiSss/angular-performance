@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="container__title">
+        Default <br /> component
+    </div>
+    <div class="container__wrapper">
+        <div class="container__button">
+            <button (click)="onClick()">Click</button>
+        </div>
+        <div class="container__timestamp">
+            Last Update: <br />
+
+            <ng-container *ngIf="timestamp">
+                {{timestamp | date:'HH:mm:ss'}}
+            </ng-container>
+
+        </div>
+    </div>
+
+</div>

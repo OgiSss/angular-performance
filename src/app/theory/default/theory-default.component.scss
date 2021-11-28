@@ -1,0 +1,23 @@
+.container {
+  &__image {
+    img {
+      width: 400px;
+      display: block;
+      margin: auto;
+      padding: 30px;
+    }
+  }
+
+  &__components {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 5px; /* this */
+    app-default {
+      flex: 0 0 30%;
+      margin: 5px;
+    }
+  }
+}

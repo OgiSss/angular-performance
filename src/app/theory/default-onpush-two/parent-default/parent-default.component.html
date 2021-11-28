@@ -1,0 +1,13 @@
+<div>
+    <h2>Parent - Default</h2>
+
+    <div class="counter">
+        Count: {{counter.count}}
+        <button (click)="onChange()">Click</button>
+    </div>
+
+    <div class="children">
+        <app-child-default [counter]="counter"></app-child-default>
+        <app-child-push [counter]="counter"></app-child-push>
+    </div>
+</div>

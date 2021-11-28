@@ -1,0 +1,26 @@
+.children {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container {
+  background-color: grey;
+  color: #000;
+  padding: 16px;
+}
+
+h2 {
+  color: #000;
+  text-align: center;
+  padding: 16px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    margin-left: 10px;
+  }
+}

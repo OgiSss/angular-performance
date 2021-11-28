@@ -1,0 +1,17 @@
+.container {
+  background-color: #fff;
+  padding: 16px;
+  h3 {
+    font-size: 24px;
+    color: rgb(146, 149, 108);
+    word-wrap: break-word;
+    padding-bottom: 16px;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  p {
+    display: flex;
+    color: rgb(146, 149, 108);
+  }
+}

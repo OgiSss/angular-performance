@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="container__item">
+        <h2>Component - Default</h2>
+        <img src="/assets/increaseByValue.png" />
+    </div>
+    <div class="container__item">
+        <h2>Component - OnPush</h2>
+        <img src="/assets/increaseByRef.png" />
+    </div>
+</div>
+
+<div class="buttons">
+    <div>
+        <h4>Increase Counter by</h4>
+        <div class="buttons__wrapper">
+            <button (click)="increaseByValue()">Value</button>
+            <button (click)="increaseByReference()">Reference</button>
+        </div>
+        <h4>
+            Counter: {{counter.count}}
+        </h4>
+    </div>
+</div>
+
+<div class="components">
+    <app-parent-default [counter]="counter"></app-parent-default>
+    <app-parent-push [counter]="counter"></app-parent-push>
+</div>
