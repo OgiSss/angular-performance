@@ -1,0 +1,7 @@
+<h2>{{title}} </h2>
+<div class="container">
+    <div *ngFor="let item of items; let i = index">
+        <h3>{{item.name}}</h3>
+        <img [src]="item.image" />
+    </div>
+</div>

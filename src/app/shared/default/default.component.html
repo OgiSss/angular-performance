@@ -7,7 +7,8 @@
             <button (click)="onClick()">Click</button>
         </div>
         <div class="container__timestamp">
-            Last Update: <br />
+            Last Update:
+            <br />
 
             <ng-container *ngIf="timestamp">
                 {{timestamp | date:'HH:mm:ss'}}

@@ -1,0 +1,17 @@
+<mat-card>
+
+    <button mat-raised-button
+            color="primary"
+            (click)="addItem()">ADD ITEM</button>
+
+    <mat-list role="list">
+        <ng-container *ngFor="let item of list">
+            <mat-list-item role="listitem"><span>{{item.name}}</span> <span>{{item.distance | purePipe}}</span>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+        </ng-container>
+
+
+    </mat-list>
+
+</mat-card>

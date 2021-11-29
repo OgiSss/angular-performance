@@ -1,7 +1,6 @@
+<app-images title="Default" [items]="items"></app-images>
 <div class="container">
-    <div class="container__image">
-        <img src="/assets/default-component.png" />
-    </div>
+
     <div class="container__components">
         <app-default (update)="onUpdate($event)"
                      [timestamp]="timestamp"></app-default>

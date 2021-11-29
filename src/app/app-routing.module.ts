@@ -7,35 +7,48 @@ import { DetachReattachComponent } from './theory/detach-reattach/detach-reattac
 import { MarkForCheckComponent } from './theory/mark-for-check/mark-for-check.component';
 import { MarkVsDetectComponent } from './theory/mark-vs-detect/mark-vs-detect.component';
 import { OutsideComponent } from './theory/outside/outside.component';
+import { PurePipeComponent } from './theory/pure-pipe/pure-pipe.component';
 
 const routes: Routes = [
   {
     component: TheoryDefaultComponent,
     path: 'default',
+    pathMatch: 'full',
   },
   {
     component: DetachReattachComponent,
-    path: 'detach-reattach',
+    path: 'reattach',
+    pathMatch: 'full',
   },
   {
     component: DefaultOnpushOneComponent,
-    path: 'default-push',
+    path: 'push',
+    pathMatch: 'full',
   },
   {
     component: DefaultOnpushTwoComponent,
     path: 'default-push-two',
+    pathMatch: 'full',
   },
   {
     component: MarkForCheckComponent,
     path: 'mark-for-check',
+    pathMatch: 'full',
   },
   {
     component: MarkVsDetectComponent,
     path: 'mark-vs-detect',
+    pathMatch: 'full',
   },
   {
     component: OutsideComponent,
     path: 'outside-angular',
+    pathMatch: 'full',
+  },
+  {
+    component: PurePipeComponent,
+    path: 'pure-pipe',
+    pathMatch: 'full',
   },
 ];
 

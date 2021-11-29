@@ -6,11 +6,13 @@ import { Counter } from 'src/app/shared/models/counter.interface';
   templateUrl: './default-onpush-two.component.html',
   styleUrls: ['./default-onpush-two.component.scss'],
 })
-export class DefaultOnpushTwoComponent implements OnInit {
+export class DefaultOnpushTwoComponent {
   counter: Counter = { count: 0 };
-  constructor() {}
 
-  ngOnInit(): void {}
+  items: Array<{ name: string; image: string }> = [
+    { name: 'Component - Default', image: '/assets/increaseByValue.png' },
+    { name: 'Component - OnPush', image: '/assets/increaseByRef.png' },
+  ];
 
   increaseByValue() {
     this.counter.count++;

@@ -1,0 +1,25 @@
+button {
+  margin-left: auto;
+  display: block;
+  margin-bottom: 16px;
+}
+
+mat-card {
+  margin-top: 16px;
+}
+
+:host {
+  width: 300px;
+}
+
+mat-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  display: block;
+  &:last-child {
+    margin-left: auto;
+  }
+}

@@ -5,14 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './theory-default.component.html',
   styleUrls: ['./theory-default.component.scss'],
 })
-export class TheoryDefaultComponent implements OnInit {
+export class TheoryDefaultComponent {
   timestamp: Date = new Date();
+
+  items: Array<{ name: string; image: string }> = [
+    { name: '', image: '/assets/default-component.png' },
+  ];
 
   onUpdate(date: Date) {
     this.timestamp = date;
-  }
-
-  ngOnInit() {
-    console.log(this.timestamp);
   }
 }

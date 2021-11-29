@@ -1,53 +1,32 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
+  "defaultProject": "angular-performance",
   "newProjectRoot": "projects",
   "projects": {
     "angular-performance": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/angular-performance",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
-              "src/styles.scss"
-            ],
-            "scripts": []
-          },
           "configurations": {
+            "development": {
+              "buildOptimizer": false,
+              "extractLicenses": false,
+              "namedChunks": true,
+              "optimization": false,
+              "sourceMap": true,
+              "vendorChunk": true
+            },
             "production": {
               "budgets": [
                 {
-                  "type": "initial",
+                  "maximumError": "1mb",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "type": "initial"
                 },
                 {
-                  "type": "anyComponentStyle",
+                  "maximumError": "4kb",
                   "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "type": "anyComponentStyle"
                 }
               ],
               "fileReplacements": [
@@ -57,29 +36,23 @@
                 }
               ],
               "outputHashing": "all"
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
             }
           },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "angular-performance:build:production"
-            },
-            "development": {
-              "browserTarget": "angular-performance:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "production",
+          "options": {
+            "assets": ["src/favicon.ico", "src/assets"],
+            "index": "src/index.html",
+            "inlineStyleLanguage": "scss",
+            "main": "src/main.ts",
+            "outputPath": "dist/angular-performance",
+            "polyfills": "src/polyfills.ts",
+            "scripts": [],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "src/styles.scss"
+            ],
+            "tsConfig": "tsconfig.app.json"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -87,27 +60,48 @@
             "browserTarget": "angular-performance:build"
           }
         },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "angular-performance:build:development"
+            },
+            "production": {
+              "browserTarget": "angular-performance:build:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            "assets": ["src/favicon.ico", "src/assets"],
+            "inlineStyleLanguage": "scss",
+            "karmaConfig": "karma.conf.js",
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "scripts": [],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "tsConfig": "tsconfig.spec.json"
           }
         }
-      }
+      },
+      "prefix": "app",
+      "projectType": "application",
+      "root": "",
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        },
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "sourceRoot": "src"
     }
   },
-  "defaultProject": "angular-performance"
+  "version": 1
 }

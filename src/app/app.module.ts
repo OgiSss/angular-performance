@@ -28,6 +28,16 @@ import { MarkVsDetectDetectComponent } from './theory/mark-vs-detect/mark-vs-det
 import { MarkVsDetectMarkComponent } from './theory/mark-vs-detect/mark-vs-detect-mark/mark-vs-detect-mark.component';
 import { MarkVsDetectParentComponent } from './theory/mark-vs-detect/mark-vs-detect-parent/mark-vs-detect-parent.component';
 import { OutsideComponent } from './theory/outside/outside.component';
+import { PurePipeComponent } from './theory/pure-pipe/pure-pipe.component';
+import { PurePipeTemplateFunctionComponent } from './theory/pure-pipe/pure-pipe-template-function/pure-pipe-template-function.component';
+import { PurePipePurePipeComponent } from './theory/pure-pipe/pure-pipe-pure-pipe/pure-pipe-pure-pipe.component';
+import { PurePipeImpurePipeComponent } from './theory/pure-pipe/pure-pipe-impure-pipe/pure-pipe-impure-pipe.component';
+import { PurePipePipe } from './theory/pure-pipe/pipes/pure-pipe.pipe';
+import { ImpurePipe } from './theory/pure-pipe/pipes/impure.pipe';
+import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { ImagesComponent } from './shared/images/images.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +62,13 @@ import { OutsideComponent } from './theory/outside/outside.component';
     MarkVsDetectMarkComponent,
     MarkVsDetectParentComponent,
     OutsideComponent,
+    PurePipeComponent,
+    PurePipeTemplateFunctionComponent,
+    PurePipePurePipeComponent,
+    PurePipeImpurePipeComponent,
+    PurePipePipe,
+    ImpurePipe,
+    ImagesComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +80,9 @@ import { OutsideComponent } from './theory/outside/outside.component';
     MatSidenavModule,
     MatExpansionModule,
     CdkAccordionModule,
+    MatListModule,
+    MatCardModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

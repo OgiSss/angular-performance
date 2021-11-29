@@ -4,27 +4,15 @@
     <h4>Oskar Kumor</h4>
 </div>
 
-<cdk-accordion class="example-accordion">
-    <cdk-accordion-item *ngFor="let item of items; let index = index;"
-                        #accordionItem="cdkAccordionItem"
-                        class="example-accordion-item"
-                        role="button"
-                        tabindex="0"
-                        [attr.id]="'accordion-header-' + index"
-                        [attr.aria-expanded]="accordionItem.expanded"
-                        [attr.aria-controls]="'accordion-body-' + index"
-                        (click)="accordionItem.toggle()">
-        <div class="example-accordion-item-header">
-            {{ item.title }}
-        </div>
-        <div class="example-accordion-item-body"
-             role="region"
-             [style.display]="accordionItem.expanded ? '' : 'none'"
-             [attr.id]="'accordion-body-' + index"
-             [attr.aria-labelledby]="'accordion-header-' + index">
-            <a *ngFor="let link of item.links"
-               [routerLink]="[link.path]"
-               routerLinkActive="router-link-active">{{link.name}}</a>
-        </div>
-    </cdk-accordion-item>
-</cdk-accordion>
+<mat-list>
+    <mat-list-item *ngFor="let item of items">
+        <mat-list-item *ngFor="let link of item.links">
+            <a [routerLink]="[link.path]"
+               routerLinkActive="active">
+                {{link.name}}
+            </a>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+    </mat-list-item>
+</mat-list>
