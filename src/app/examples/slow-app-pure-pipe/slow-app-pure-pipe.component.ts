@@ -1,4 +1,5 @@
 import {
+  ChangeDetectionStrategy,
   Component,
   ElementRef,
   NgZone,
@@ -7,11 +8,12 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-slow-app-outside',
-  templateUrl: './slow-app-outside.component.html',
-  styleUrls: ['./slow-app-outside.component.scss'],
+  selector: 'app-slow-app-pure-pipe',
+  templateUrl: './slow-app-pure-pipe.component.html',
+  styleUrls: ['./slow-app-pure-pipe.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SlowAppOutsideComponent implements OnInit {
+export class SlowAppPurePipeComponent implements OnInit {
   intervals: any;
 
   @ViewChild('loader') loader!: ElementRef;

@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SlowAppOutsideComponent } from './examples/slow-app-outside/slow-app-outside.component';
+import { SlowAppPurePipeComponent } from './examples/slow-app-pure-pipe/slow-app-pure-pipe.component';
+import { SlowAppVOneComponent } from './examples/slow-app-v-one/slow-app-v-one.component';
 import { SlowAppComponent } from './examples/slow-app/slow-app.component';
 import { DefaultOnpushOneComponent } from './theory/default-onpush-one/default-onpush-one.component';
 import { DefaultOnpushTwoComponent } from './theory/default-onpush-two/default-onpush-two.component';
@@ -54,6 +57,21 @@ const routes: Routes = [
   {
     component: SlowAppComponent,
     path: 'slow-app',
+    pathMatch: 'full',
+  },
+  {
+    component: SlowAppOutsideComponent,
+    path: 'slow-app-outside',
+    pathMatch: 'full',
+  },
+  {
+    component: SlowAppVOneComponent,
+    path: 'isolated-cd',
+    pathMatch: 'full',
+  },
+  {
+    component: SlowAppPurePipeComponent,
+    path: 'final',
     pathMatch: 'full',
   },
 ];

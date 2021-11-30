@@ -1,12 +1,10 @@
 <mat-card>
 
-    <mat-form-field class="example-full-width"
-                    appearance="fill">
-        <input matInput
-               (change)="search(searchValue)"
-               placeholder="Search"
-               [(ngModel)]="searchValue">
-    </mat-form-field>
+
+    <input type="text"
+           (change)="search(searchValue)"
+           placeholder="Search"
+           [(ngModel)]="searchValue">
 
     <mat-list role="list">
         <ng-container *ngFor="let item of list">

@@ -44,7 +44,12 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { SlowAppList2Component } from './examples/slow-app/slow-app-list-2/slow-app-list-2.component';
 import { SlowAppOutsideComponent } from './examples/slow-app-outside/slow-app-outside.component';
-import { SlowAppOutsideListComponent } from './examples/slow-app-outside/slow-app-outside-list/slow-app-outside-list.component';
+import { SlowAppVOneComponent } from './examples/slow-app-v-one/slow-app-v-one.component';
+import { SlowAppVTwoListComponent } from './examples/slow-app-v-one/slow-app-v-two-list/slow-app-v-two-list.component';
+import { SlowAppVOneListComponent } from './examples/slow-app-v-one/slow-app-v-one-list/slow-app-v-one-list.component';
+import { SlowAppPurePipeComponent } from './examples/slow-app-pure-pipe/slow-app-pure-pipe.component';
+import { SlowAppPurePipeListComponent } from './examples/slow-app-pure-pipe/slow-app-pure-pipe-list/slow-app-pure-pipe-list.component';
+import { SlowAppPurePipeListTwoComponent } from './examples/slow-app-pure-pipe/slow-app-pure-pipe-list-two/slow-app-pure-pipe-list-two.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +85,12 @@ import { SlowAppOutsideListComponent } from './examples/slow-app-outside/slow-ap
     SlowAppListComponent,
     SlowAppList2Component,
     SlowAppOutsideComponent,
-    SlowAppOutsideListComponent,
+    SlowAppVOneComponent,
+    SlowAppVOneListComponent,
+    SlowAppVTwoListComponent,
+    SlowAppPurePipeComponent,
+    SlowAppPurePipeListComponent,
+    SlowAppPurePipeListTwoComponent,
   ],
   imports: [
     BrowserModule,

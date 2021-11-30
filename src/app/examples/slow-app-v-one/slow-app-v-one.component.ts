@@ -7,11 +7,11 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-slow-app-outside',
-  templateUrl: './slow-app-outside.component.html',
-  styleUrls: ['./slow-app-outside.component.scss'],
+  selector: 'app-slow-app-v-one',
+  templateUrl: './slow-app-v-one.component.html',
+  styleUrls: ['./slow-app-v-one.component.scss'],
 })
-export class SlowAppOutsideComponent implements OnInit {
+export class SlowAppVOneComponent implements OnInit {
   intervals: any;
 
   @ViewChild('loader') loader!: ElementRef;
