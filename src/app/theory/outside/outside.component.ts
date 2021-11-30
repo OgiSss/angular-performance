@@ -13,14 +13,24 @@ import { fibonacci } from 'src/app/helpers/fibonacci';
   templateUrl: './outside.component.html',
   styleUrls: ['./outside.component.scss'],
 })
-export class OutsideComponent implements OnInit {
+export class OutsideComponent {
   @ViewChild('loader') loader!: ElementRef;
 
   fibValue: number = 0;
   intervals!: any;
   rotation: number = 0;
   constructor(private zone: NgZone) {}
-  ngOnInit(): void {}
+
+  items = [
+    {
+      name: 'Inside',
+      image: '/assets/inside.png',
+    },
+    {
+      name: 'Outside',
+      image: '/assets/outside.png',
+    },
+  ];
 
   outside() {
     clearInterval(this.intervals);

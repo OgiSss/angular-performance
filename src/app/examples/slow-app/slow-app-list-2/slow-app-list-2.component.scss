@@ -1,0 +1,29 @@
+button {
+  margin-left: auto;
+  display: block;
+  margin-bottom: 16px;
+}
+
+mat-card {
+  margin: 16px auto;
+  width: 300px;
+
+  overflow: hidden;
+}
+
+mat-list {
+  height: 600px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+}
+
+.mat-form-field {
+  width: 100%;
+}

@@ -1,12 +1,7 @@
+<app-images title="Run outside Angular"
+            [items]="items"></app-images>
+
 <div>
-
-    <div class="image-wrapper">
-        <img src="/assets/inside.png" />
-    </div>
-
-    <div class="image-wrapper">
-        <img src="/assets/outside.png" />
-    </div>
 
     <img #loader
          class="loader"
@@ -15,11 +10,10 @@
     <div class="buttons">
         <button (click)="inside()">Inside</button>
         <button (click)="outside()">Outside</button>
-        <button>Data</button>
     </div>
 
     <h3>
-        FIBBONACI {{fibo(33)}}
+        FIBBONACI: {{fibo(33)}}
     </h3>
 
 </div>

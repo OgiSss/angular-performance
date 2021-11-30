@@ -1,26 +1,32 @@
 <mat-card>
 
-    <button mat-raised-button
-            color="primary"
-            (click)="addItem()">ADD ITEM</button>
+    <mat-form-field class="example-full-width"
+                    appearance="fill">
+        <input matInput
+               (change)="search(searchValue)"
+               placeholder="Search"
+               [(ngModel)]="searchValue">
+    </mat-form-field>
 
     <mat-list role="list">
         <ng-container *ngFor="let item of list">
             <mat-list-item role="listitem">
                 <div class="list-item">
                     <div>
+                        {{item.index}}
+                    </div>
+
+                    <div>
                         {{item.name}}
                     </div>
 
                     <div>
-                        {{item.distance | purePipe}}
+                        {{fibo(item.distance)}}
                     </div>
                 </div>
 
             </mat-list-item>
-            <mat-divider></mat-divider>
         </ng-container>
-
 
     </mat-list>
 

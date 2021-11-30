@@ -38,6 +38,13 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ImagesComponent } from './shared/images/images.component';
+import { SlowAppComponent } from './examples/slow-app/slow-app.component';
+import { SlowAppListComponent } from './examples/slow-app/slow-app-list/slow-app-list.component';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { SlowAppList2Component } from './examples/slow-app/slow-app-list-2/slow-app-list-2.component';
+import { SlowAppOutsideComponent } from './examples/slow-app-outside/slow-app-outside.component';
+import { SlowAppOutsideListComponent } from './examples/slow-app-outside/slow-app-outside-list/slow-app-outside-list.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +76,11 @@ import { ImagesComponent } from './shared/images/images.component';
     PurePipePipe,
     ImpurePipe,
     ImagesComponent,
+    SlowAppComponent,
+    SlowAppListComponent,
+    SlowAppList2Component,
+    SlowAppOutsideComponent,
+    SlowAppOutsideListComponent,
   ],
   imports: [
     BrowserModule,
@@ -83,6 +95,8 @@ import { ImagesComponent } from './shared/images/images.component';
     MatListModule,
     MatCardModule,
     MatButtonModule,
+    FormsModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

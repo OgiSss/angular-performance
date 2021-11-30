@@ -18,10 +18,11 @@ $sidebar-width: 300px;
 
 a {
   height: 30px;
-
+  text-decoration: none;
+  color: #000;
   width: 100%;
   text-align: center;
-  line-height: 2;
+  line-height: 3;
   &:hover {
     color: grey;
   }

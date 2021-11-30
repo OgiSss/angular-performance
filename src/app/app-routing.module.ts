@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SlowAppComponent } from './examples/slow-app/slow-app.component';
 import { DefaultOnpushOneComponent } from './theory/default-onpush-one/default-onpush-one.component';
 import { DefaultOnpushTwoComponent } from './theory/default-onpush-two/default-onpush-two.component';
 import { TheoryDefaultComponent } from './theory/default/theory-default.component';
@@ -48,6 +49,11 @@ const routes: Routes = [
   {
     component: PurePipeComponent,
     path: 'pure-pipe',
+    pathMatch: 'full',
+  },
+  {
+    component: SlowAppComponent,
+    path: 'slow-app',
     pathMatch: 'full',
   },
 ];

@@ -19,6 +19,7 @@ export class SidebarComponent {
         { path: '/mark-vs-detect', name: 'Mark for check vs detect changes' },
         { path: '/outside-angular', name: 'Run outside Angular' },
         { path: '/pure-pipe', name: 'Pure pipe' },
+        { path: '/slow-app', name: 'Slow application' },
       ],
     },
     // { title: 'Example', links: [] },

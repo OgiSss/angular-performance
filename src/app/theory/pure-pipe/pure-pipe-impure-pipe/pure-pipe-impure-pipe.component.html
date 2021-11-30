@@ -6,7 +6,17 @@
 
     <mat-list role="list">
         <ng-container *ngFor="let item of list">
-            <mat-list-item role="listitem"><span>{{item.name}}</span> <span>{{item.distance | impure}}</span>
+            <mat-list-item role="listitem">
+                <div class="list-item">
+                    <div>
+                        {{item.name}}
+                    </div>
+
+                    <div>
+                        {{item.distance | impure}}
+                    </div>
+                </div>
+
             </mat-list-item>
             <mat-divider></mat-divider>
         </ng-container>

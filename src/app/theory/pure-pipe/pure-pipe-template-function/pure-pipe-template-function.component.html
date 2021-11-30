@@ -6,7 +6,17 @@
 
     <mat-list role="list">
         <ng-container *ngFor="let item of list">
-            <mat-list-item role="listitem"><span>{{item.name}}</span> <span>{{fibo(item.distance)}}</span>
+            <mat-list-item role="listitem">
+                <div class="list-item">
+                    <div>
+                        {{item.name}}
+                    </div>
+
+                    <div>
+                        {{fibo(item.distance)}}
+                    </div>
+                </div>
+
             </mat-list-item>
             <mat-divider></mat-divider>
         </ng-container>

@@ -5,21 +5,15 @@ button {
 }
 
 mat-card {
-  margin-top: 16px;
+  margin: 16px auto;
 }
 
 :host {
   width: 300px;
 }
 
-mat-list-item {
+.list-item {
   display: flex;
   justify-content: space-between;
-}
-
-span {
-  display: block;
-  &:last-child {
-    margin-left: auto;
-  }
+  width: 100%;
 }

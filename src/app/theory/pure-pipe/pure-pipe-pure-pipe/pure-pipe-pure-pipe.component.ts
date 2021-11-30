@@ -17,11 +17,6 @@ export class PurePipePurePipeComponent implements OnInit {
   addItem() {
     this.list.push({ name: `river${this.index++}`, distance: this.index });
   }
-
-  fibo(value: number) {
-    console.log('PURE PIPE');
-    return fibonacci(value);
-  }
 }
 
 export const DATA = [
