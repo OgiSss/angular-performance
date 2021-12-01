@@ -11,8 +11,11 @@ export class DefaultOnpushOneComponent {
 
   items: Array<{ name: string; image: string }> = [
     { name: 'Component - Default', image: '/assets/default-comp.png' },
-    { name: 'Component - OnPush', image: '/assets/increaseByValue.png' },
-    { name: 'Component - Default', image: '/assets/push-comp.png' },
+    {
+      name: 'Component - OnPush',
+      image: '/assets/push-comp.png',
+    },
+    { name: 'Component - Default', image: '/assets/increaseByValue.png' },
     { name: 'Component - OnPush', image: '/assets/increaseByRef.png' },
   ];
 
