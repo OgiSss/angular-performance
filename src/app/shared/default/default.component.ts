@@ -13,10 +13,10 @@ import {
 })
 export class DefaultComponent {
   @Input() timestamp!: Date;
-  @Output() update: EventEmitter<Date> = new EventEmitter<Date>();
 
-  onClick() {
-    const date = new Date();
-    this.update.emit(date);
+  onClick() {}
+
+  date() {
+    return new Date();
   }
 }
